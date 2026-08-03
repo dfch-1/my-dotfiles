@@ -11,7 +11,7 @@ if test "$XDG_CURRENT_DESKTOP" = "Hyprland"
     echo -n (hostname)
     set_color $ckull
     echo -n ")-["
-    set_color blue
+    set_color cyan
     echo -n (string replace $HOME "~" (pwd))
     set_color $ckull
     echo -n "]"
@@ -48,12 +48,12 @@ if test "$XDG_CURRENT_DESKTOP" = "Hyprland"
     echo -n ")"
     end
 
-    set_color red
+    set_color $ckull
     echo ""
     echo -n "└─"
 
     if test $last_status -ne 0
-        set_color red
+        set_color ff0000
     else
         set_color green
     end

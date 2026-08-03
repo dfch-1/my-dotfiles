@@ -1,6 +1,7 @@
 set -U fish_greeeting ""
 set -g ckull red
 
+cd ~
 clear
 
 #Alias

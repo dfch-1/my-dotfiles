@@ -51,8 +51,9 @@ local browser     = "firefox"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function () 
-hl.exec_cmd("elephant")
-hl.exec_cmd("waybar")
+    hl.exec_cmd("hyprpaper")
+    hl.exec_cmd("elephant")
+    hl.exec_cmd("waybar")
 end)
 
 
@@ -98,7 +99,7 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border   = { colors = {"rgba(33ccffee)", "rgba(00ff99ee)"}, angle = 45 },
+            active_border   = { colors = {"rgba(8c3b12ee)", "rgba(fff8e7ee)"}, angle = 45 },
             inactive_border = "rgba(595959aa)",
         },
 
@@ -117,7 +118,7 @@ hl.config({
 
         -- Change transparency of focused and unfocused windows
         active_opacity   = 1.0,
-        inactive_opacity = 1.0,
+        inactive_opacity = 0.8,
 
         shadow = {
             enabled      = true,
@@ -214,7 +215,7 @@ hl.config({
     misc = {
         force_default_wallpaper = 0,    -- Set to 0 or 1 to disable the anime mascot wallpapers
         disable_hyprland_logo   = false, -- If true disables the random hyprland logo / anime girl background. :(
-	disable_splash_rendering = true
+	    disable_splash_rendering = true
     },
 })
 
@@ -269,6 +270,7 @@ hl.bind(mainMod .. " + CTRL + Return", hl.dsp.exec_cmd(terminal .. " -e btop"))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("code"))
 
 hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. " + SHIFT + CTRL + Return", hl.dsp.exec_cmd(browser .. " --private-window"))
 hl.bind(mainMod .. " + SHIFT + Y", hl.dsp.exec_cmd(browser .. " https://www.youtube.com/"))
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(browser .. " https://web.whatsapp.com/"))
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd(browser .. " https://claude.ai/new"))
