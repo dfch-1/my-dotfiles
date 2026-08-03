@@ -51,7 +51,9 @@ local browser     = "firefox"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function () 
+    hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("hyprpaper")
+    hl.exec_cmd("hyprlock")
     hl.exec_cmd("elephant")
     hl.exec_cmd("waybar")
 end)
@@ -288,10 +290,11 @@ hl.bind(mainMod .. " + CTRL + ESCAPE", hl.dsp.exec_cmd("reboot"))
 hl.bind(mainMod .. " + CTRL + F", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(menu))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
-hl.bind(mainMod .. " + CTRL + W", hl.dsp.exec_cmd("pkill -SIGUSR1 waybar"))
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("pkill -SIGUSR1 waybar"))
 hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m output -z -o ~/Pictures/Screenshots/"))
 hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("hyprshot -m window -z -o ~/Pictures/Screenshots/"))
 hl.bind(mainMod .. " + CTRL + Print", hl.dsp.exec_cmd("hyprshot -m region -z -o ~/Pictures/Screenshots/"))
