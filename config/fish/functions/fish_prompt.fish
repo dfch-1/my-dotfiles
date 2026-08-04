@@ -12,6 +12,7 @@ if test "$XDG_CURRENT_DESKTOP" = "Hyprland"
     set_color $ckull
     echo -n ")-["
     set_color cyan
+    echo -n " "
     echo -n (string replace $HOME "~" (pwd))
     set_color $ckull
     echo -n "]"
@@ -21,7 +22,7 @@ if test "$XDG_CURRENT_DESKTOP" = "Hyprland"
     if test -n "$branch"
         set_color $ckull
         echo -n "-["
-        set_color ff8700
+        set_color ef5033
         echo -n "Git  "
         set_color magenta
         echo -n "("
@@ -39,7 +40,6 @@ if test "$XDG_CURRENT_DESKTOP" = "Hyprland"
 
     if test $duration -gt 60000
         echo -n (math round $duration / 60000) "m"
-        echo -n ":" (math round $duration / 1000) "s"
     else
         echo -n (math round $duration / 1000)"s"
     end
