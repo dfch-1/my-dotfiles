@@ -271,7 +271,8 @@ hl.bind(mainMod .. " + CTRL + Return", hl.dsp.exec_cmd(terminal .. " -e btop"))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("code"))
 
 hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd(browser))
-hl.bind(mainMod .. " + SHIFT + CTRL + Return", hl.dsp.exec_cmd(browser .. " --private-window"))
+hl.bind(mainMod .. " + SHIFT + ALT + Return", hl.dsp.exec_cmd(browser .. " --private-window"))
+hl.bind(mainMod .. " + SHIFT + CTRL + Return", hl.dsp.exec_cmd(browser .. " https://www.google.com/"))
 hl.bind(mainMod .. " + SHIFT + Y", hl.dsp.exec_cmd(browser .. " https://www.youtube.com/"))
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(browser .. " https://web.whatsapp.com/"))
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd(browser .. " https://claude.ai/new"))
@@ -280,7 +281,6 @@ hl.bind(mainMod .. " + SHIFT + T", hl.dsp.exec_cmd(browser .. " https://translat
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.exec_cmd(browser .. " https://www.nerdfonts.com/"))
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd(browser .. " https://mail.google.com/"))
 hl.bind(mainMod .. " + SHIFT + N", hl.dsp.exec_cmd(browser .. " https://keep.google.com/"))
-hl.bind(mainMod .. " + SHIFT + CTRL + G", hl.dsp.exec_cmd(browser .. " https://www.google.com/"))
 
 local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)

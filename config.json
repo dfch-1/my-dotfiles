@@ -1,35 +1,33 @@
 {
     "en": {
         "bootloader_instruction": "(for example: sudo grub-mkconfig -o /boot/grub/grub.cfg)",
+        "detecting_hardwere": "Detecting Hardwere... ",
         "cpu_not_detected": "Could not detect CPU vendor: ",
-        "detecting_cpu": "<== Detecting CPU (microcode) ==>",
-        "detecting_gpu": "<== Detecting GPU ==>",
         "gpu_manual_check": "Check 'lspci' output manually and install the appropriate driver.",
         "gpu_not_detected": "Could not automatically detect GPU vendor.",
         "installation_complete": "Done. Remember to regenerate your bootloader if this is your first microcode installation",
-        "installing_amd_drivers": "-> Installing AMD drivers",
-        "installing_amd_ucode": "-> AMD CPU detected, installing amd-ucode",
-        "installing_intel_drivers": "-> Installing Intel drivers",
-        "installing_intel_ucode": "-> Intel CPU detected, installing intel-ucode",
-        "installing_nvidia_drivers": "-> Installing NVIDIA drivers",
-        "nvidia_open_source": "-> Turing or newer NVIDIA GPU detected: using nvidia-open",
-        "nvidia_proprietary": "-> Pre-Turing NVIDIA GPU (or unrecognized): using proprietary driver"
+        "installing_amd_drivers": "Installing AMD drivers... ",
+        "installing_amd_ucode": "AMD CPU detected, installing amd-ucode... ",
+        "installing_intel_drivers": "Installing Intel drivers... ",
+        "installing_intel_ucode": "Intel CPU detected, installing intel-ucode... ",
+        "installing_nvidia_drivers": "Installing NVIDIA drivers... ",
+        "nvidia_open_source": "Turing or newer NVIDIA GPU detected: using nvidia-open",
+        "nvidia_proprietary": "Pre-Turing NVIDIA GPU (or unrecognized): using proprietary driver"
     },
     "es": {
         "bootloader_instruction": "(por ejemplo con: sudo grub-mkconfig -o /boot/grub/grub.cfg)",
+        "detecting_hardwere": "Detectando Hardwere... ",
         "cpu_not_detected": "No se pudo detectar el fabricante de la CPU: ",
-        "detecting_cpu": "<== Detectando CPU (microcode) ==>",
-        "detecting_gpu": "<== Detectando GPU ==>",
         "gpu_manual_check": "Revisa manualmente la salida de 'lspci' e instala el driver correspondiente.",
         "gpu_not_detected": "No se pudo detectar el fabricante de la GPU automáticamente.",
         "installation_complete": "Listo. Recuerda regenerar tu bootloader si instalaste microcode por primera vez",
-        "installing_amd_drivers": "-> Instalando drivers AMD",
-        "installing_amd_ucode": "-> CPU AMD detectada, instalando amd-ucode",
-        "installing_intel_drivers": "-> Instalando drivers Intel",
-        "installing_intel_ucode": "-> CPU Intel detectada, instalando intel-ucode",
-        "installing_nvidia_drivers": "-> Instalando drivers NVIDIA",
-        "nvidia_open_source": "-> GPU NVIDIA Turing o más reciente detectada: usando nvidia-open",
-        "nvidia_proprietary": "-> GPU NVIDIA anterior a Turing (o no identificada con certeza): usando nvidia propietario"
+        "installing_amd_drivers": "Instalando drivers AMD... ",
+        "installing_amd_ucode": "CPU AMD detectada, instalando amd-ucode... ",
+        "installing_intel_drivers": "Instalando drivers Intel... ",
+        "installing_intel_ucode": "CPU Intel detectada, instalando intel-ucode... ",
+        "installing_nvidia_drivers": "Instalando drivers NVIDIA... ",
+        "nvidia_open_source": "GPU NVIDIA Turing o más reciente detectada: usando nvidia-open",
+        "nvidia_proprietary": "GPU NVIDIA anterior a Turing (o no identificada con certeza): usando nvidia propietario"
     },
     "languages": "es"
 }
