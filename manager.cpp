@@ -27,7 +27,7 @@ int main()
     string lang;
 
     cout << "<== Select Language ==>" << endl;
-    cout << "(en) English\n(es) Español\n(pt) Português*\n(fr) Français*\n(it) Italiano*\n(ja) 日本語*\n(ru) Русский*" << endl;
+    cout << "  (en) English\n  (es) Español\n  (pt) Português*\n  (fr) Français*\n  (it) Italiano*\n  (ru) Русский*" << endl;
     cout << "Insert: ";
     cin >> lang;
 

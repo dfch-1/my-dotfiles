@@ -2,12 +2,16 @@
 set -e
 
 sudo pacman -Syu
-sudo pacman -S jq nlohmann gcc
+sudo pacman -S --needed --noconfirm jq gcc
 
 g++ manager.cpp -o manager
-chmod +x ~/my-dotfiles/installed/divers.sh ~/my-dotfiles/installed/programs.sh
-chmod +x ~/my-dotfiles/commands.sh 
+chmod +x installed/drivers.sh installed/programs.sh
+chmod +x commands.sh 
 ./manager
+echo
 ./installed/drivers.sh
+echo
 ./installed/programs.sh
 ./commands.sh
+echo "done"
+reboot

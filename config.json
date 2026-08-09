@@ -1,8 +1,8 @@
 {
     "en": {
         "bootloader_instruction": "(for example: sudo grub-mkconfig -o /boot/grub/grub.cfg)",
-        "detecting_hardwere": "Detecting Hardwere... ",
         "cpu_not_detected": "Could not detect CPU vendor: ",
+        "detecting_hardwere": "Detecting Hardwere... ",
         "gpu_manual_check": "Check 'lspci' output manually and install the appropriate driver.",
         "gpu_not_detected": "Could not automatically detect GPU vendor.",
         "install_drivers_confirm": "",
@@ -17,8 +17,8 @@
     },
     "es": {
         "bootloader_instruction": "(por ejemplo con: sudo grub-mkconfig -o /boot/grub/grub.cfg)",
-        "detecting_hardwere": "Detectando Hardwere... ",
         "cpu_not_detected": "No se pudo detectar el fabricante de la CPU: ",
+        "detecting_hardwere": "Detectando Hardwere... ",
         "gpu_manual_check": "Revisa manualmente la salida de 'lspci' e instala el driver correspondiente.",
         "gpu_not_detected": "No se pudo detectar el fabricante de la GPU automáticamente.",
         "install_drivers_confirm": "¿Deseas instalar los drivers? (presiona Y para continuar): ",
