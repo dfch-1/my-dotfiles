@@ -16,6 +16,17 @@ echo -e "\033[1mCPU:\033[0m""$(cat /proc/cpuinfo | grep "model name" | head -1 |
 echo -e "\033[1mGPU:\033[0m" "$(lspci | grep -i vga | awk -F': ' '{print $NF}')"
 echo
 
+read -p "$(echo -e "\033[1;34m::\033[0m" "\033[1m$(mng install_drivers_confirm)\033[0m")" RESPONSE
+RESPONSE=$(echo "$RESPONSE" | tr '[:lower:]' '[:upper:]')
+
+if [ "$RESPONSE" = "Y" ] || [ "$RESPONSE" = "S" ]; then
+echo
+else
+    echo "ok"
+    echo
+    exit 0
+fi
+
 HAS_INTEL=false
 HAS_NVIDIA=false
 HAS_AMD=false
