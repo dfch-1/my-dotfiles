@@ -4,14 +4,14 @@ if test "$XDG_CURRENT_DESKTOP" = "Hyprland"
     set -l duration $CMD_DURATION
 
     set_color $ckull
-    echo -n "┌──("
-    set_color blue
+    echo -n "╭──("
+    set_color red
     echo -n (whoami)
     echo -n "@"
     echo -n (hostname)
     set_color $ckull
     echo -n ")-["
-    set_color cyan
+    set_color red
     echo -n " "
     echo -n (string replace $HOME "~" (pwd))
     set_color $ckull
@@ -50,7 +50,7 @@ if test "$XDG_CURRENT_DESKTOP" = "Hyprland"
 
     set_color $ckull
     echo ""
-    echo -n "└─"
+    echo -n "╰─"
 
     if test $last_status -ne 0
         set_color ff0000
@@ -64,12 +64,12 @@ else
     function fish_prompt
         echo -n (pwd)
 
-        if test "$PWD" = "/"
-            echo -n ""
-        else
-            echo -n "/"
-        end
+        #if test "$PWD" = "/"
+        #    echo -n ""
+        #else
+        #    echo -n "/"
+        #end
 
-        echo -n ' > '
+        echo -n '> '
     end
 end

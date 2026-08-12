@@ -1,5 +1,5 @@
 set -U fish_greeeting ""
-set -g ckull red
+set -g ckull 8e0404
 
 cd ~
 clear
@@ -7,6 +7,10 @@ clear
 #Alias
 alias start='start-hyprland'
 alias stop='exit'
+alias ls='lsd -1'
+alias ll='lsd -l'
+
+#abbr
 
 if test "$XDG_CURRENT_DESKTOP" = "Hyprland"
     fastfetch

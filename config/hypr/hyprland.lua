@@ -101,7 +101,7 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border   = { colors = {"rgba(8c3b12ee)", "rgba(fff8e7ee)"}, angle = 45 },
+            active_border   = "rgba(cc0403ee)",
             inactive_border = "rgba(595959aa)",
         },
 
@@ -274,6 +274,7 @@ hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("code"))
 hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + SHIFT + ALT + Return", hl.dsp.exec_cmd(browser .. " --private-window"))
 hl.bind(mainMod .. " + SHIFT + CTRL + Return", hl.dsp.exec_cmd(browser .. " https://www.google.com/"))
+hl.bind(mainMod .. " + SHIFT + A", hl.dsp.exec_cmd(browser .. " https://aur.archlinux.org/"))
 hl.bind(mainMod .. " + SHIFT + Y", hl.dsp.exec_cmd(browser .. " https://www.youtube.com/"))
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(browser .. " https://web.whatsapp.com/"))
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd(browser .. " https://claude.ai/new"))
