@@ -1,3 +1,6 @@
+estoy creado mis dotfiles para aprender logica
+aun no esta competo pero estoy creando una paleta de colores dark red
+
 drivers.sh
 Detecta hardware (GPU y CPU) e instala los drivers correspondientes.
 Compatible con Arch Linux y distros basadas en Arch (CachyOS, Manjaro, EndeavourOS, etc.)

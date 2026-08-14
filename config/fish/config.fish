@@ -8,9 +8,10 @@ clear
 alias start='start-hyprland'
 alias stop='exit'
 alias ls='lsd -1'
-alias ll='lsd -l'
 
 #abbr
+abbr ll 'ls -l'
+abbr la 'ls -la'
 
 if test "$XDG_CURRENT_DESKTOP" = "Hyprland"
     fastfetch
