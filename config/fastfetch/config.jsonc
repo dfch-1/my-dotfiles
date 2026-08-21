@@ -19,46 +19,6 @@
 "modules": [
   "break",
   {
-      "type": "custom",
-      "format": "╭──────────────────────── {#italic_red}Hardware{#} ────────────────────────╮"
-  },
-  {
-    "type": "host",
-    "format": "{2}",
-    "key": " 󰌢 Host    ",
-    "keyColor": "31"
-  },
-  {
-    "type": "cpu",
-    "key": "  CPU     ",
-    "keyColor": "31"
-  },
-  {
-    "type": "gpu",
-    "key": " 󰢮 GPU     ",
-    "keyColor": "31"
-  },
-  {
-    "type": "memory",
-    "key": "  Memory  ",
-    "keyColor": "31"
-  },
-  {
-    "type": "disk",
-    "key": " 󰋊 Disk    ",
-    "keyColor": "31"
-  },
-  {
-    "type": "display",
-    "key": "  Display ",
-    "keyColor": "31"
-  },
-  {
-    "type": "custom",
-    "format": "╰──────────────────────────────────────────────────────────╯"
-  },
-  "break",
-  {
     "type": "custom",
     "format": "╭──────────────────────── {#italic_red}Software{#} ───────────────────────╮"
   },
@@ -95,6 +55,46 @@
   {
     "type": "terminalfont",
     "key": "  Font    ",
+    "keyColor": "31"
+  },
+  {
+    "type": "custom",
+    "format": "╰──────────────────────────────────────────────────────────╯"
+  },
+  "break",
+    {
+      "type": "custom",
+      "format": "╭──────────────────────── {#italic_red}Hardware{#} ────────────────────────╮"
+  },
+  {
+    "type": "host",
+    "format": "{2}",
+    "key": " 󰌢 Host    ",
+    "keyColor": "31"
+  },
+  {
+    "type": "cpu",
+    "key": "  CPU     ",
+    "keyColor": "31"
+  },
+  {
+    "type": "gpu",
+    "key": " 󰢮 GPU     ",
+    "keyColor": "31"
+  },
+  {
+    "type": "memory",
+    "key": "  Memory  ",
+    "keyColor": "31"
+  },
+  {
+    "type": "disk",
+    "key": " 󰋊 Disk    ",
+    "keyColor": "31"
+  },
+  {
+    "type": "display",
+    "key": "  Display ",
     "keyColor": "31"
   },
   {

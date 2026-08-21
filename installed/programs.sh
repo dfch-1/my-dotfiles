@@ -1,5 +1,4 @@
-sudo pacman -S --needed --noconfirm hyprland hyprshot hyprpaper hyprlock hyprpolkitagent hypridle kitty fish xdg-desktop-portal-hyprland 
-sudo pacman -S --needed --noconfirm waybar lsd xdg-desktop-portal brightnessctl ttf-jetbrains-mono-nerd
-sudo pacman -S --needed --noconfirm nautilus gnome-disk-utility nvim tmux btop mtpfs gvfs-mtp libmtp perl-image-exiftool cage
-sudo pacman -S --needed --noconfirm yay walker zip unzip 7zip vlc imv jp2a python3 inotify-tools android-tools
+sudo pacman -S --needed --noconfirm hyprland hyprshot hyprpaper hyprlock hyprpolkitagent hypridle xdg-desktop-portal-hyprland xdg-desktop-portal
+sudo pacman -S --needed --noconfirm waybar kitty fish brightnessctl ttf-jetbrains-mono-nerd mtpfs gvfs-mtp libmtp perl-image-exiftool nautilus gnome-disk-utility
+sudo pacman -S --needed --noconfirm nvim tmux lsd btop duf cage yay walker zip unzip 7zip vlc imv jp2a python3 inotify-tools android-tools
 yay -S --needed --noconfirm elephant elephant-providerlist elephant-desktopapplications visual-studio-code-bin

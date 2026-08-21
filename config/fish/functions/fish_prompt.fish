@@ -11,9 +11,9 @@ if test "$XDG_CURRENT_DESKTOP" = "Hyprland"
     echo -n (hostname)
     set_color $ckull
     echo -n ")-["
-    set_color cyan
+    set_color red
     echo -n " "
-    echo -n (string replace $HOME "~" (pwd))
+    echo -n (pwd | string replace $HOME "~" | string replace $MEDIA "󱊞 ")
     set_color $ckull
     echo -n "]"
     set_color normal
@@ -26,15 +26,30 @@ if test "$XDG_CURRENT_DESKTOP" = "Hyprland"
         echo -n "Git  "
         set_color magenta
         echo -n "("
-        echo -n "$branch"
+
+	echo -n "$branch"
+
         echo -n ")"
+
+        #set -l cambios (git status --porcelain | cat)
+	    #if test -n "$cambios"
+        #    set -l mod (echo "$cambios" |grep "^ M" |wc -l)
+        #    set -l add (echo "$cambios" |grep "^??" |wc -l)
+        #    set -l del (echo "$cambios" |grep "^ D" |wc -l)
+        #    
+        #    set_color red
+        #    test $mod -gt 0 && echo -n "M:$mod"
+        #    test $add -gt 0 && echo -n "A:$add"
+        #    test $del -gt 0 && echo -n "D:$del"
+        #end
+
         set_color $ckull
         echo -n "]"
     end
 
     if test $duration -gt 2000
     set_color $ckull
-    echo -n "-("
+    echo -n "-["
     set_color yellow
     echo -n " "
 
@@ -45,7 +60,7 @@ if test "$XDG_CURRENT_DESKTOP" = "Hyprland"
     end
 
     set_color $ckull
-    echo -n ")"
+    echo -n "]"
     end
 
     set_color $ckull
